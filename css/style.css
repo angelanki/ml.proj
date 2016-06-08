@@ -31,10 +31,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-.im1{
-  background: url("../images/im1.jpg")no-repeat 0px 0px;
-  width:10%; margin-right: 6em; margin-left:2em;
-}
+
 
 .select{
     padding:3px;
