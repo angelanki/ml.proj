@@ -46,7 +46,6 @@ new WOW().init();
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script> 
     <script> 
         $(function(){ 
-            //锚点跳转滑动效果 
             $('a[href*=#],area[href*=#]').click(function() { 
                 console.log(this.pathname) 
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) { 
@@ -57,7 +56,7 @@ new WOW().init();
                         $('html,body').animate({ 
                                     scrollTop: targetOffset 
                                 }, 
-                                1000); 
+                                1500); 
                         return false; 
                     } 
                 } 
