@@ -1,1 +1,285 @@
-My Page
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cultivation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" /> -->
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+$(".scroll").click(function(event){		
+event.preventDefault();
+$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+});
+});
+</script>
+<!---End-smoth-scrolling---->
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery.swipebox.min.js"></script> 
+<script type="text/javascript">
+jQuery(function($) {
+$(".swipebox").swipebox();
+});
+</script>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+new WOW().init();
+</script>
+<!---/End-Animation---->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script> 
+    <script> 
+        $(function(){ 
+            //锚点跳转滑动效果 
+            $('a[href*=#],area[href*=#]').click(function() { 
+                console.log(this.pathname) 
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) { 
+                    var $target = $(this.hash); 
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']'); 
+                    if ($target.length) { 
+                        var targetOffset = $target.offset().top; 
+                        $('html,body').animate({ 
+                                    scrollTop: targetOffset 
+                                }, 
+                                1000); 
+                        return false; 
+                    } 
+                } 
+            }); 
+        }) 
+    </script> 
+
+</head>
+<body>
+<div class="header1" id="home" style:"background: url("../images/banner1.jpg")no-repeat 0px 0px;">
+<div class="container">
+<div class="header-top">
+<div class="top-menu">
+<span class="menu"><img src="images/nav.png" alt=""/> </span>
+<ul>
+<li><a href="#motivation" >MOTIVATION</a></li>
+<li><a href="#data">DATA</a></li>
+<li><a href="#algorithm">ALGORITHM</a></li>
+<li><a href="#experiment">EXPERIMENT</a></li>
+<li><a href="#conclusion">CONCLUSION</a></li>
+
+</ul>
+<!-- script for menu -->
+
+<script>
+$("span.menu").click(function(){
+$(".top-menu ul").slideToggle("slow" , function(){
+});
+});
+</script>
+<!-- //script for menu -->
+</div>
+
+<!--<div class="search">
+<form>
+<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+<input type="submit" value="">
+</form>
+</div>-->
+
+
+<!--<div class="login"><a href="" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('errorMsg').style.display = 'none';">Log in</a></div>-->
+
+<div class="modal fade" id="myModal" role="dialog">
+
+<div class="modal-dialog">
+
+
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+<h4 class="modal-title" style="font-size:2em; font-family:'Josefin Sans', sans-serif">Log In</h4>
+
+</div>
+-->
+
+<!-- <div class="modal-body">
+
+<p>Submit Successfully!</p>
+
+</div> -->
+
+<div class="modal-footer">
+<table>
+<tr>
+<td><input id="modal-text" name="username" type="text" tabindex="1" placeholder="Username or E-mail"  style="padding-top:10px;" required></td>
+<td><input id="modal-text" name="password" type="password" tabindex="1" placeholder="Password" style="padding-top:10px" required><br></td>
+<td id="errorMsg" style="color: red; font-family: 'Josefin Sans', sans-serif">Invalid username or password. </td>
+</tr>
+<tr>
+<td><input type="radio" name="identity" value="manager" style="margin-right: 10px; margin-top: 20px"><a style="margin:30px 20px 0px 0px; font-size:1.5em;text-transform: capitalize;text-decoration: none; font-family: 'Josefin Sans', sans-serif;">Manager</a>
+<input type="radio" name="identity" value="student" checked="checked" style="margin-right: 10px"><a style="margin:30px 0px 0px 0px;font-size:1.5em; font-family: 'Josefin Sans', sans-serif; text-transform: capitalize;text-decoration: none;">Student</a></td>
+</tr>
+</table>
+<button type="button" class="btn btn-success" onclick="login()" style="float:left; margin-top: 20px; background-color: #855CD4; width:200px; opacity:0.8; border: solid #855CD4">Log In</button>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+<script type="text/javascript">
+function login() {
+var username = document.getElementsByName('username')[0].value;
+var password = document.getElementsByName('password')[0].value;
+console.log('username:'+username+'password'+password);
+if (!username || !password) {
+document.getElementById('errorMsg').style.display = 'block';
+return ;
+}
+var radios = document.getElementsByName('identity');
+var identity;
+if (radios[1].checked) { // student
+location.href = 'home-student.html';
+}
+else {
+location.href = 'home-manager.html';
+}
+}
+</script>
+
+
+<div class="clearfix"></div>
+
+</div>
+
+<div class="logo">
+<a href="#">Spam or Ham</a>
+</div>
+<!--<p><a href="proposal-submit.html" class="submit">Submit Your Proposal</a></p>-->
+</div>
+</div>
+
+
+<div class="clearfix">
+<div class="logo_img">
+<div class="container">
+<!--<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">-->
+<h3 id = "contact">Our Team</h3>
+<img style = "width:10%; margin-right: 6em; margin-left:2em" src="images/im1.jpg">
+<img style = "width:10%; margin-right: 6em" src="images/im2.jpg" >
+<img style = "width:10%; margin-right: 6em" src="images/im4.jpg">
+<img style = "width:10%; margin-right: 6em" src="images/im3.jpg">
+<div class="up-text">
+<table width = "800px">
+	<tr>
+	<td ><a href="#">Anqi Xing</a><p>M.S. Electrical Engineering</p></td>
+	<td><a href="#">Yuzhu Wang</a><p>M.S. Electrical Engineering</p></td>
+	<td><a href="#">Teke Xu</a><p>M.S. Electrical Engineering</p></td>
+	<td><a href="#">Xi Wu</a><p>M.S. Electrical Engineering</p></td>
+</tr>
+</table>
+</div>
+<!--<div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">-->
+<div class = "clearfix"></div>
+<div class = "up-text" style="font-size:1.3em"><p>Project Info.: EECS 349-Machine Learning,Northwestern University</p></div>
+<div class="up-text" style="font-size:0.8em">
+<img src = "images/img-sprite1.png" style = "width:3%">
+<a href="mailto:anqixing2015@u.northwestern.edu">anqixing2015@u.northwestern.edu</a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class = "clearfix"></div>
+<div class="content">
+<div class="news-section" id = "motivation">
+<div class="container">
+<h3>Motivation</h3>
+</div>
+</div>
+
+<div class="news-section1" id = "data">
+<div class="container">
+<h3>Data</h3>
+</div>
+</div>
+<div class="news-section" id = "algorithm">
+<div class="container">
+<h3>Algorithm</h3>
+</div>
+</div>
+<div class="news-section1" id = "experiment">
+<div class="container">
+<h3>Experiment</h3>
+</div>
+</div>
+<div class="news-section" id = "conclusion">
+<div class="container">
+<h3>Conclusion</h3>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="footer-section">
+<div class="container">
+<div class="footer-top">
+</div>
+<div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
+<div class="bottom-menu">
+<ul>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#algorithm">Algorithm</a></li>
+<li><a href="#experiment">Experiment</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#contact">Our team</a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+/*
+var defaults = {
+containerID: 'toTop', // fading element id
+containerHoverID: 'toTopHover', // fading element hover id
+scrollSpeed: 1200,
+easingType: 'linear' 
+};
+*/
+
+$().UItoTop({ easingType: 'easeOutQuart' });
+
+});
+</script>
+<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</div>
+
+</body>
+</html> 
