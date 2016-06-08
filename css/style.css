@@ -486,6 +486,12 @@ margin: 1em 1em 1em 0;
 font-family: 'arial';
 text-align: justify;
 }
+.news-section a:hover {
+color: #f2af00;
+}
+.news-section1 a:hover {
+color: #f2af00;
+}
 .news-grids {
 margin-top: 3em;
 }
